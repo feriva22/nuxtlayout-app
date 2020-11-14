@@ -1,6 +1,6 @@
 <template>
   <main>
-    <NextLink to="/">Go to home</NextLink>
+    <NuxtLink to="/">Go to home</NuxtLink>
     <ul>
       <li v-for="todo in todos" :key="todo.text">
         <input :checked="todo.done" @change="toggle(todo)" type="checkbox" />
